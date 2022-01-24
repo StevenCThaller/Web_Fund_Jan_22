@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- html opening tag -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cody's Cool Creation</title>
+</head>
+<body>
+    <!-- most important title on my page -->
+    <h1>Cody's Cool Website</h1>
+    <h2>My name is Cody!</h2>
+    <!-- what if I want to write a whole paragraph about something? -->
+    <p>
+        You can write <em>whatever</em> you want! Paragraph tags allow us to write a lot of information, and <em><strong>it's not limited to literal paragraphs</strong></em>.
+        <!-- Use a line break if you need to move to the next line -->
+        <!-- It is considered an inline element, meaning it should be used WITHIN text -->
+        <br>
+        It's just kind of a general purpose text tag. 
+        <!-- An anchor tag (aka hyperlink) allows us to navigate around or away from a given website -->
+        <a href="https://espn.com">Click here to go to ESPN</a>
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident odio itaque incidunt aliquam suscipit tenetur beatae quas? Debitis veritatis sapiente exercitationem blanditiis eveniet laudantium dolores.
+    </p>
+    <h3>Groceries that I need to get</h3>
+    <!-- Unordered lists (aka bullet lists) -->
+    <ul>
+        <!-- li is short for list item -->
+        <li>Broccoli</li>
+        <li>Cheese</li>
+        <li>
+            Ingredients for chicken soup
+            <ul>
+                <li>Broth</li>
+                <li>Carrots</li>
+                <li>Celery</li>
+                <li>Chicken</li>
+                <li>Noodles</li>
+            </ul>
+        </li>
+    </ul>
+    <!-- tables are great because they automatically align things for us -->
+    <table>
+        <!-- the head should contain the column headers -->
+        <thead>
+            <tr>
+                <th>Movie</th>
+                <th>Year</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <!-- the body should contain the actual table data -->
+        <tbody>
+            <!-- each row should contain the same number of cells -->
+            <tr>
+                <td>Up</td>
+                <td>2009</td>
+                <td>PG</td>
+            </tr>
+            <tr>
+                <td>The Matrix</td>
+                <td>1999</td>
+                <td>R</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- images do not contain children. they are self-closing tags -->
+    <!-- with the source coming from a webpage -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Conejillo_de_indias.jpg" alt="Fuzzy bunny from wikipedia">
+    <!-- with the source coming from a local file -->
+    <img src="./bunny_pic.jpg" alt="Bunny on my computer">
+</body>
+<!-- html closing tag -->
+</html>
