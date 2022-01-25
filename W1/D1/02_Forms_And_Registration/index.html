@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="#" method="post">
+        <!-- a div is used to group elements together that serve a similar purpose -->
+        <div>
+            <!-- the for attribute of the label should match up with the id attribute of the input it is associated with -->
+            <label for="firstName">First Name: *</label>
+            <input type="text" name="firstName" id="firstName">
+        </div>
+        <div>
+            <label for="lastName">Last Name: *</label>
+            <input type="text" name="lastName" id="lastName">
+        </div>
+        <div>
+            <label for="emailAddress">Email Address: *</label>
+            <!-- setting the type as email will provide a mini-validation to ensure it matches the email address format of name@domain -->
+            <input type="email" name="emailAddress" id="emailAddress">
+        </div>
+
+        <div>
+            <label for="password">Password: *</label>
+            <!-- the type of password is what replaces what we type with the dots to conceal the actual password -->
+            <input type="password" name="password" id="password">
+        </div>
+
+        <div>
+            <label for="birthday">Birthday:</label>
+            <!-- input of type date allows the user to select the date from a calendar dialog box -->
+            <input type="date" name="birthday" id="birthday">
+        </div>
+        <p>Gender Identity:</p>
+        <div>
+            <!-- with radio inputs, you want to make sure that all radio options for the same category
+            share the name, while the id is specific to each individual input. Additionally, we make sure 
+            to add a value attribute sharing the same info as the id and label -->
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+
+            <input type="radio" name="gender" value="nonBinary" id="nonBinary">
+            <label for="nonBinary">Non-Binary</label>
+
+            <input type="radio" name="gender" value="preferNot" id="preferNot">
+            <label for="preferNot">I prefer not to answer</label>
+        </div>
+
+        <div>
+            <label for="description">A short description about myself</label>
+            <br>
+            <textarea name="description" id="description" cols="35" rows="3"></textarea>
+        </div>
+
+        <div>
+            <label for="language">Favorite Language:</label>
+            <!-- A dropdown uses a select tag, which should contain the name of the category -->
+            <select name="language" id="language">
+                <!-- 
+                    value: what value to actually submit
+                    in the option tag: what value to display
+                -->
+                <option value="js">JavaScript</option>
+                <option value="css">CSS</option>
+                <option value="html">HTML</option>
+            </select>
+        </div>
+
+        <div>
+            <input type="checkbox" name="receiveUpdates" value="yes" id="receiveUpdates">
+            <label for="receiveUpdates">Yes, I would like to receive periodic email updates</label>
+        </div>
+        <input type="submit" value="Create Account">
+        <p>* Indicates a required field</p>
+    </form>
+</body>
+</html>
