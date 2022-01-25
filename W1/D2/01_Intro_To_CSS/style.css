@@ -1,0 +1,62 @@
+body {
+    background-color: dodgerblue;
+}
+
+#centered-photo-and-socials {
+    /* because this element has a display of block, we can set auto margins on the sides
+    display: block;
+    /* If you provide 4 measurements in a margin ruleset, the measurements are applied clockwise starting at the top */
+    /* margin: 5px 10px 15px 20px; */
+    /* 
+        But if you only provide 2 measurements in a margin rulset (this goes for padding and border as well, by the way)
+        the first measurement will be applied to the top AND bottom, and the second will be applied to the left AND right.
+
+        NOTE: There must also be a width
+    */
+    margin: 0 auto;
+    width: 420px;
+}
+
+#profile-pic {
+    /* 
+        border radius allows you to round the corners of an element. in this case,
+        a radius of 50% (aka half the width of the element) makes it a circle
+    */
+    border-radius: 50%;
+
+    vertical-align: top;
+    display: inline-block;
+}
+
+.no-bullets {
+    /* removes the bullets on an unordered list/the numbers on an ordered list */
+    list-style-type: none;
+    /* allows the element to lie side-by-side with other inline-block elements */
+    display: inline-block;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.extra-space-under {
+    margin-bottom: 83px;
+}
+
+#but-this-one-bold {
+    font-weight: bold;
+}
+
+a {
+    color: white;
+    font-size: 13pt;
+}
+
+.icons {
+    width: 30px;
+    vertical-align: middle;
+}
+
+table {
+    background-color: lightgray;
+}
