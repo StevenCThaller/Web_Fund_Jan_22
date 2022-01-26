@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* flex to the rescue! */
+.row {
+    /* height: 100vh; vh is short for view height, aka the height of the browser window */
+    /* key point to note: display flex should be applied to the PARENT element */
+    /* note number 2: display flex ONLY works to align DIRECT children */
+    display: flex;
+    /* 
+        align-items will center the elements within a flex container with
+        respect to the direction PERPENDICULAR to the flex direction
+    */
+    align-items: center;
+    /* by default, anything with a display of flex has a flex-direction of row */
+    flex-direction: row;
+
+    /* 
+        in order to align your content with respect to the flex direction, 
+        use the justify-content property 
+    */
+    /* justify-content: center; */
+    justify-content: space-between;
+    /* to ensure that any contents spill over into the next row/column */
+    flex-wrap: wrap;
+    /* to ensure consistent gap between all children */
+    gap: 15px;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+}
+
+.what-time-list {
+    width: 200px;
+    height: 175px;
+    min-width: 200px;
+    min-height: 175px;
+    /* padding-left: 25px; */
+    /* To totally center (both vertically and horizontally) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* and to ensure they remain stacked vertically */
+    flex-direction: column;
+}
+
+.some-paragraph {
+    width: 150px;
+    height: 85px;
+    min-width: 150px;
+    min-height: 85px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow { 
+    background-color: yellow;
+}
+
