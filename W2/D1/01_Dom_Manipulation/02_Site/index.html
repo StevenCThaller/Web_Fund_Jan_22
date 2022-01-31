@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Official LEGO&reg; Shop US</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="top-nav">
+            <button onclick="deleteButton(this)">&larr; PLAY ZONE</button>
+            <p>Free shipping with orders over $35&nbsp;&nbsp;&nbsp;<a href="#">Learn More</a></p>
+            <ul>
+                <li><img src="./images/head.png" alt="Minifigure head"> Account</li>
+                <li><img src="./images/vip-crown.png" alt="VIP Crown"> VIP</li>
+            </ul>
+        </nav>
+        <nav id="bottom-nav">
+            <ul class="nav-links">
+                <li><h1><img id="logo" src="./images/logo.svg" alt="LEGO logo"></h1></li>
+                <li>SHOP</li>
+                <li>DISCOVER</li>
+                <li>HELP</li>
+            </ul>
+            <ul class="nav-links right">
+                <li id="search"><img class="icon" src="./images/search.svg" alt="Search icon"></li>
+                <li><img class="icon heartClick" src="./images/heart.svg" alt="Heart icon"></li>
+                <li><img class="icon" src="./images/shopping.png" alt="Shopping bag icon"> &nbsp;(0)</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="banner">
+            <img src="./images/friends.webp" alt="Friends sets">
+            <div class="banner-contents">
+                <img src="https://www.lego.com/cdn/cs/set/assets/blta2da20b91030f490/friends_logo_300w.png?format=png&height=60&dpr=1" alt="Friends logo">
+                <h2>Discover new faces and friends</h2>
+                <p>Celebrate kids' individuality and how differences bring us together.</p>
+                <button onmouseover="hoverOver(this)" onmouseout="hoverOut(this)">Shop now ></button>
+                <button onmouseover="hoverOver(this)" onmouseout="hoverOut(this)">Learn more ></button>
+            </div>
+        </div>
+        <ul class="categories">
+            <li><img src="./images/new.webp" alt="New items">New</li>
+            <li><img src="./images/exclusives.webp" alt="Exclusives">Exclusives</li>
+            <li><img src="./images/offers.webp" alt="offers">Offers</li>
+            <li><img src="./images/lunar.webp" alt="Lunar new year">Lunar New Year</li>
+            <li><img src="./images/mario.webp" alt="Super Mario Bros">LEGO&reg; Super Mario&trade;</li>
+            <li><img src="./images/minecraft.webp" alt="Minecraft">LEGO&reg; Minecraft&trade;</li>
+            <li><img src="./images/pick_a_brick.webp" alt="Pick a brick">Pick-a-Brick</li>
+            <li><img src="./images/vip.webp" alt="VIP">VIP</li>
+        </ul>
+        <section class="recommended">
+            <h3>Recommended For You</h3>
+            <div class="rec-list">
+                <div class="product">
+                    <div class="product-img">
+                        <div class="wish-list">
+                            <button class="heartClick">
+                                <img class="wish-list-heart" src="./images/heart.svg" alt="Wish List heart">
+                            </button>
+                            <span>Add to wish list</span>
+                        </div>
+                        <img class="prod-img" src="./images/ice.webp" alt="Lunear New Year Ice Festival">
+                        <p class="desc">New</p>
+                    </div>
+                    <h4>Lunar New Year Ice Festival</h4>
+                </div>
+                <div class="product">
+                    <div class="product-img">
+                        <div class="wish-list">
+                            <button class="heartClick">
+                                <img class="wish-list-heart" src="./images/heart.svg" alt="Wish List heart">
+                            </button>
+                            <span>Add to wish list</span>
+                        </div>
+                        <img class="prod-img" src="./images/van.webp" alt="Volkswagen Van">
+                        <p class="desc">Hard to find</p>
+                    </div>
+                    <h4>Volkswagen T2 Camper Van</h4>
+                </div>
+                <div class="product">
+                    <div class="product-img">
+                        <div class="wish-list">
+                            <button class="heartClick">
+                                <img class="wish-list-heart" src="./images/heart.svg" alt="Wish List heart">
+                            </button>
+                            <span>Add to wish list</span>
+                        </div>
+                        <img class="prod-img" src="./images/map.webp" alt="World Map">
+                        <p class="desc">Hard to find</p>
+                    </div>
+                    <h4>World Map</h4>
+                </div>
+                <div class="product">
+                    <div class="product-img">
+                        <div class="wish-list">
+                            <button class="heartClick">
+                                <img class="wish-list-heart" src="./images/heart.svg" alt="Wish List heart">
+                            </button>
+                            <span>Add to wish list</span>
+                        </div>
+                        <img class="prod-img" src="./images/treehouse.webp" alt="Friendship Tree House">
+                        <p class="desc">New</p>
+                    </div>
+                    <h4>Friendship Tree House</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
