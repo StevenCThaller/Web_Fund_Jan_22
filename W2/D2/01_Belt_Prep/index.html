@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>JAMES <span>CONSULTING</span></h1>
+            <nav>
+                <ul>
+                    <li class="active-page" onclick="navigateTo(this)">Home</li>
+                    <li onclick="navigateTo(this)">About</li>
+                    <li onclick="navigateTo(this)">Services</li>
+                    <li onclick="navigateTo(this)">Projects</li>
+                    <li onclick="navigateTo(this)">Clients</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <img class="hero" src="./images/main_img.png" alt="Person snowboarding">
+            <div class="row">
+                <section class="main-contents">
+                    <h3><img class="wrench" src="./images/icon.png" alt="Wrench icon">SERVICES</h3>
+                    <p>
+                        You have an idea about where you want your business to go? 
+                        Need some help getting there? We are the experts at helping 
+                        our customers take their businesses to the next stage. We 
+                        look forward to transforming your business ...
+                    </p>
+                    <button>More info</button>
+                </section>
+                <section class="main-contents">
+                    <h3><img class="wrench" src="./images/icon.png" alt="Wrench icon">PROJECTS</h3>
+                    <p>
+                        We worked with Pinktrip, a local fashion retailer, in 2010. 
+                        They had a dream to take their business to the next level and
+                        draw in a national base of customers, while retaining the 
+                        local feel of their store online. 
+                        <br>
+                        We redesigned ...
+                    </p>
+                    <button>More info</button>
+                </section>
+                <section class="main-contents">
+                    <h3><img class="wrench" src="./images/icon.png" alt="Wrench icon">CLIENTS</h3>
+                    <p>
+                        We have worked with a variety of businesses varying from 
+                        non-profit to corporate to retail. Although our clients have 
+                        ranged in size to large corporations, our niche is helping 
+                        small and medium sized clients discover ...
+                    </p>
+                    <button>More info</button>
+                </section>
+            </div>
+            <div id="bottom-info" class="row">
+                <section>
+                    <h3 class="bottom-heading">THE WORLD CAN BE YOURS!</h3>
+                    <img id="bottom-image" src="./images/building.png" alt="Building with clouds" onmouseover="hoverOn(this)" onmouseout="hoverOff(this)">
+                </section>
+                <div class="about-us">
+                    <p>
+                        Our goal at James Consulting is to provide effective solutions
+                        designed to boost your business, be it small or a large organization.
+                    </p>
+                    <p>
+                        Our consultants design solutions tailored specifically to the 
+                        needs of your business in order to ensure you achieve your dreams
+                        of success. 
+                    </p>
+                    <p>Check out our custom solutions and services.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <section>
+                    <h3 class="bottom-heading">TESTIMONIAL</h3>
+                    <figure>
+                        <blockquote class="testimonial">
+                            <p>
+                                "I'm a testimonial. Click me to edit and add text that
+                                says something nice about you and your services.""
+                            </p>
+                            <div id="quote-origin"></div>
+                        </blockquote>
+                        <figcaption>Samantha Jones, Project Manager</figcaption>
+                    </figure>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li class="active-page">Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Clients</li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <div id="cookie">
+        <h4>COOKIE NOTIFICATION</h4>
+        <div class="row">
+            <p>By using this site you accept that we can use cookies to track your every move. We will know what you did last summer.</p>
+            <button onclick="closeCookie()">Accept Or Else</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
